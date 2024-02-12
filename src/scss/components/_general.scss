@@ -1,0 +1,45 @@
+@use "sass:math";
+
+/* =============== Containers =============== */
+
+// Regular
+.--container {
+	max-width: rem($containerWidth + $containerPadding * 2);
+	margin: 0 auto;
+	padding-inline: rem($containerPadding);
+}
+
+// Grid
+// .--grid-content {
+// 	display: grid;
+// 	grid-template-columns:
+// 		[full-width-start] 1fr [breakout-start] rem($containerPadding) [content-start] minmax(auto, rem($containerWidth)) [content-end] rem($containerPadding) [breakout-end] 1fr [full-width-end];
+// }
+
+/* =========================================== */
+
+.--font-size-checker {
+	position: fixed;
+	z-index: -1;
+
+	visibility: hidden;
+
+	font-size: 1rem;
+}
+
+.--visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.--burger {
+	display: none;
+}
