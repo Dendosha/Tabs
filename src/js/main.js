@@ -1,5 +1,5 @@
 // Prevent content shifting when hiding scrollbar
-import preventContentShift from "./libs/preventContentShift.js"
+// import preventContentShift from "./libs/preventContentShift.js"
 
 
 
@@ -33,12 +33,19 @@ import preventContentShift from "./libs/preventContentShift.js"
 
 
 // Tabs
-// import Tabs from "./libs/tabs.js"
+import Tabs from "./libs/tabs.js"
+
+const pageTabs = document.querySelectorAll('[data-tabs="tabs"]')
+pageTabs.forEach(tabs => {
+	new Tabs(tabs, {
+
+	})
+})
 
 
 
 // Element mover
-// import ElementMover from "./libs/elementMover.js"
+import ElementMover from "./libs/elementMover.js"
 
 // const elementsToMove = document.querySelectorAll('[data-mover]')
 // elementsToMove.forEach(element => {
