@@ -45,7 +45,7 @@ pageTabs.forEach(tabs => {
 
 
 // Element mover
-import ElementMover from "./libs/elementMover.js"
+// import ElementMover from "./libs/elementMover.js"
 
 // const elementsToMove = document.querySelectorAll('[data-mover]')
 // elementsToMove.forEach(element => {

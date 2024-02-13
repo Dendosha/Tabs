@@ -57,7 +57,7 @@
 		border-radius: rem(10);
 		border: rem(2) solid var(--clr-light);
 
-		&:focus {
+		&[role="tab"]:focus {
 			outline: rem(2) solid red;
 		}
 	}
