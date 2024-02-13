@@ -2,13 +2,58 @@
 <html lang="ru">
 
 @@include('html/head.html', {
-"title": "Template",
+"title": "Accessible tabs",
 })
 
 <body>
 	<div class="wrapper">
 		@@include('html/header.html', {})
 		<main class="page">
+			<h1 class="--visually-hidden">Tabs</h1>
+			<section class="page__tabs tabs">
+				<div data-tabs="tabs" id="tabs" class="tabs__container">
+					<h2 class="tabs__title" id="tabs-title">Accessible tabs</h2>
+
+					<ul data-tabs="tablist" aria-labelledby="tabs-title" class="tabs__tablist">
+						<li class="tabs__tablist-items"><a href="#tabpanel-1" class="tabs__tab" id="tab-1">Tab 1</a></li>
+						<li class="tabs__tablist-items"><a href="#tabpanel-2" class="tabs__tab" id="tab-2">Tab 2</a></li>
+						<li class="tabs__tablist-items"><a href="#tabpanel-3" class="tabs__tab" id="tab-3">Tab 3</a></li>
+						<li class="tabs__tablist-items"><a href="#tabpanel-4" class="tabs__tab" id="tab-4">Tab 4</a></li>
+					</ul>
+
+					<div data-tabs="tabpanels" class="tabs__tabpanels">
+						<div id="tabpanel-1" aria-labelledby="tab-1" class="tabs__tabpanel">
+							<p class="tabs__tabpanel-paragraph">
+								1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus consequuntur, quo at esse iste
+								tempore obcaecati voluptates sint alias labore? Animi praesentium amet earum fugit dicta, nam dolorum
+								esse cupiditate?
+							</p>
+						</div>
+						<div id="tabpanel-2" aria-labelledby="tab-2" class="tabs__tabpanel">
+							<p class="tabs__tabpanel-paragraph">
+								2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus consequuntur, quo at esse iste
+								tempore obcaecati voluptates sint alias labore? Animi praesentium amet earum fugit dicta, nam dolorum
+								esse cupiditate?
+							</p>
+						</div>
+						<div id="tabpanel-3" aria-labelledby="tab-3" class="tabs__tabpanel">
+							<p class="tabs__tabpanel-paragraph">
+								3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus consequuntur, quo at esse iste
+								tempore obcaecati voluptates sint alias labore? Animi praesentium amet earum fugit dicta, nam dolorum
+								esse cupiditate?
+							</p>
+						</div>
+						<div id="tabpanel-4" aria-labelledby="tab-4" class="tabs__tabpanel">
+							<p class="tabs__tabpanel-paragraph">
+								4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus consequuntur, quo at esse iste
+								tempore obcaecati voluptates sint alias labore? Animi praesentium amet earum fugit dicta, nam dolorum
+								esse cupiditate?
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</section>
 		</main>
 		@@include('html/footer.html', {})
 	</div>

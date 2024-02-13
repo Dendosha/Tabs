@@ -40,10 +40,11 @@ html {
 	font-style: normal;
 	font-weight: 400;
 
-	color: var(--default-text-color);
-
 	scroll-behavior: smooth;
 	scroll-padding-top: initial;
+
+	background-color: var(--clr-dark);
+	color: var(--clr-light);
 }
 
 body {

@@ -35,7 +35,7 @@ const paths = {
 	buildFolder,
 	srcFolder,
 	rootFolder,
-	ftp: 'localhost',
+	ftp: 'localhost/portfolio',
 }
 
 export default paths

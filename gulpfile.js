@@ -1,5 +1,5 @@
 import gulp from "gulp"
-import path from "./gulp/config/path.js"
+import paths from "./gulp/config/paths.js"
 
 import reset from "./gulp/tasks/reset.js"
 import server from "./gulp/tasks/server.js"
@@ -26,12 +26,12 @@ global.app = {
 }
 
 function watcher() {
-	gulp.watch(path.watch.files, files)
-	gulp.watch(path.watch.html, html)
-	gulp.watch(path.watch.scss, scss)
-	gulp.watch(path.watch.js, js)
-	gulp.watch(path.watch.php, php)
-	gulp.watch(path.watch.img, img)
+	gulp.watch(paths.watch.files, files)
+	gulp.watch(paths.watch.html, html)
+	gulp.watch(paths.watch.scss, scss)
+	gulp.watch(paths.watch.js, js)
+	gulp.watch(paths.watch.php, php)
+	gulp.watch(paths.watch.img, img)
 }
 
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle)
